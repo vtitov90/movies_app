@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 function setParams(config) {
   const params = config.params || {};
   config.params = Object.assign(params, {

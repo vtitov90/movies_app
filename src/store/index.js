@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import Vue from "vue";
 import Vuex from "vuex";
 import movies from "./modules/movies";
@@ -18,7 +17,5 @@ const store = new Vuex.Store({
     notification
   }
 });
-
-store.dispatch("initMoviesStore");
 
 export default store;

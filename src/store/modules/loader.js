@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import mutations from "@/store/mutations";
 
 const { TOGGLE_LOADER } = mutations;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <LoaderMovie />
+    <LoaderPage />
     <NotificationMovie />
     <PosterBg :poster="posterBg" />
     <HeaderMovie />
@@ -19,7 +19,7 @@ import { mapActions, mapGetters } from "vuex";
 import MoviesList from "@/components/MoviesList";
 import PosterBg from "@/components/PosterBg";
 import MoviesPagination from "@/components/MoviesPagination";
-import LoaderMovie from "@/components/LoaderMovie";
+import LoaderPage from "@/components/LoaderPage";
 import HeaderMovie from "@/components/HeaderMovie";
 import NotificationMovie from "@/components/NotificationMovie";
 
@@ -29,7 +29,7 @@ export default {
     MoviesList,
     PosterBg,
     MoviesPagination,
-    LoaderMovie,
+    LoaderPage,
     HeaderMovie,
     NotificationMovie,
   },
@@ -72,5 +72,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 </style>

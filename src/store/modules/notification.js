@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import mutations from "@/store/mutations";
 
 const { SHOW_TOAST_NOTIFY } = mutations;

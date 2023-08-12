@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import IDs from "@/store/mock/imdb_top250";
 import axios from "@/plugins/axios";
 import mutations from "@/store/mutations";
@@ -45,12 +44,6 @@ const moviesStore = {
     }
   },
   actions: {
-    initMoviesStore: {
-      handler({ dispatch }) {
-        dispatch("fetchMovies");
-      },
-      root: true
-    },
     async fetchMovies({ getters, commit, dispatch }) {
       try {
         dispatch("toggleLoader", true, { root: true });
